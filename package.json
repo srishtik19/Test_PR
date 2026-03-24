@@ -21,7 +21,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pr:review": "git diff origin/main...HEAD | pr-review-orchestrator review --stdin --format github-pr",
+    "pr:review:dry": "git diff origin/main...HEAD | pr-review-orchestrator review --stdin --dry-run",
+    "pr:review:init": "pr-review-orchestrator init"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "pr-review-orchestrator": "^1.0.0"
   }
 }

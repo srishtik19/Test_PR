@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.env
+.env.*.local
+pr-review-orchestrator/init.json
+pr.diff
+review.json
